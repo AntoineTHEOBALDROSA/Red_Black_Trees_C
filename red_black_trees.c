@@ -264,7 +264,7 @@ void RBTree_printf_aux(RBTree *t, RBTreeNode *x){
 }
 
 void RBTree_printf(RBTree *t){
-    if (t->root == t->sentinel) printf("Arbre vide\n");
+    if (t->root == t->sentinel) printf("Empty tree\n");
     else RBTree_printf_aux(t, t->root);
     printf("\n");
 }
